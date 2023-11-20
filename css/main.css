@@ -4,6 +4,22 @@ body { color: #111827; font-family: ui-sans-serif,system-ui,-apple-system,BlinkM
 
 .main-container { width: 1280px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
 
-.image-square { position: relative; }
+.main-title { margin-bottom: 38px; font-size: 48px; font-weight: 300; }
 
-.image-square img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; -o-object-fit: contain; object-fit: contain; }
+.secondary-title { margin-bottom: 24px; font-size: 32px; font-weight: 300; }
+
+.image-container { position: relative; }
+
+.image-container img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; -o-object-fit: cover; object-fit: cover; }
+
+hr.divider { width: 100%; margin-top: 64px; margin-bottom: 64px; border-color: #d1d5dc; border-top: unset; }
+
+hr.divider.small { margin-top: 32px; margin-bottom: 32px; }
+
+.breadcrumbs { margin-bottom: 64px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.breadcrumbs .link { color: #4b5563; text-decoration: none; }
+
+.breadcrumbs .link:hover { opacity: .7; }
+
+.breadcrumbs .divider { margin: 0 16px; color: #4b5563; }

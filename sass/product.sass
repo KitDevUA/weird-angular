@@ -1,0 +1,102 @@
+@import "_vars"
+
+.product
+	padding-top: 48px
+	padding-bottom: 48px
+	
+.product__container
+	margin-bottom: 32px
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-gap: 32px
+	.image-container
+		width: 100%
+		padding-bottom: 60%
+		border-radius: 4px
+		overflow: hidden
+	.product__content
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		.product__description
+			margin-bottom: 20px
+			font-weight: 300
+			line-height: 1.4
+		.product__price
+			margin-bottom: 10px
+			font-size: 30px
+			.smaller
+				font-size: 16px
+		.product__buttons
+			margin-bottom: 20px
+			display: flex
+			> *
+				&:not(:last-child)
+					margin-right: 16px
+		.btn
+			padding: 10px 15px
+			border-radius: 4px
+			&.to-cart
+				border: 2px solid $blue
+				background-color: $blue
+				color: #fff
+			&.to-wishlist
+				background-color: #fff
+				border: 2px solid $blue
+				color: $blue
+			i
+				margin-right: 5px
+		span.product__article
+			color: $dark-gray
+			font-weight: 300
+		.product__terms
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			> *
+				&:not(:last-child)
+					margin-bottom: 5px
+			b,p
+				font-size: 12px
+				line-height: 1.5
+			p
+				color: $dark-gray
+
+.reviews__container
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	.reviews__list
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap: 32px
+		.review__single
+			padding: 30px
+			border: 1px solid $gray
+			border-radius: 4px
+			.review__row
+				width: 100%
+				margin-bottom: 15px
+				display: inline-flex
+				justify-content: space-between
+				align-items: flex-end
+			.date
+				font-size: 12px
+			.review__stars
+				margin-bottom: 20px
+				display: flex
+				> *
+					display: flex
+					color: #facc15
+					&:not(:last-child)
+						margin-right: 5px
+			.review__text
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				b,p
+					font-size: 14px
+					&:not(:last-child)
+						margin-bottom: 10px

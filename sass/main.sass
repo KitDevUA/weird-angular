@@ -17,7 +17,17 @@ body
 	padding-left: 32px
 	padding-right: 32px
 
-.image-square
+.main-title
+	margin-bottom: 38px
+	font-size: 48px
+	font-weight: 300
+
+.secondary-title
+	margin-bottom: 24px
+	font-size: 32px
+	font-weight: 300
+
+.image-container
 	position: relative
 	img
 		width: 100%
@@ -25,4 +35,26 @@ body
 		position: absolute
 		top: 0
 		left: 0
-		object-fit: contain
+		object-fit: cover
+
+hr.divider
+	width: 100%
+	margin-top: 64px
+	margin-bottom: 64px
+	border-color: $gray
+	border-top: unset
+	&.small
+		margin-top: 32px
+		margin-bottom: 32px
+
+.breadcrumbs
+	margin-bottom: 64px
+	display: flex
+	.link
+		color: $dark-gray
+		text-decoration: none
+		&:hover
+			opacity: .7
+	.divider
+		margin: 0 16px
+		color: $dark-gray

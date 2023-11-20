@@ -1,24 +1,8 @@
 @import "_vars"
 
-.breadcrumbs
-	margin-bottom: 64px
-	display: flex
-	.link
-		color: $dark-gray
-		text-decoration: none
-		&:hover
-			opacity: .7
-	.divider
-		margin: 0 16px
-		color: $dark-gray
-
 .products
 	padding-top: 48px
 	padding-bottom: 48px
-	.main-title
-		margin-bottom: 38px
-		font-size: 48px
-		font-weight: 300
 	.products__divider
 		width: 100%
 		margin-top: 64px
@@ -47,10 +31,10 @@
 			overflow: hidden
 			position: relative
 			&:hover
-				.image-square
+				.image-container
 					img
 						transform: scale(1.1)
-			.image-square
+			.image-container
 				padding-bottom: 100%
 				img
 					transition: .3s
@@ -106,12 +90,12 @@
 		color: $dark
 		text-decoration: none
 		&:hover
-			.image-square
+			.image-container
 				img
 					transform: scale(1.1)
 			span
 				opacity: .7
-		.image-square
+		.image-container
 			width: 100%
 			margin-bottom: 10px
 			padding-bottom: 100%

@@ -1,0 +1,57 @@
+.product { padding-top: 48px; padding-bottom: 48px; }
+
+.product__container { margin-bottom: 32px; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 32px 1fr; grid-template-columns: repeat(2, 1fr); grid-gap: 32px; }
+
+.product__container .image-container { width: 100%; padding-bottom: 60%; border-radius: 4px; overflow: hidden; }
+
+.product__container .product__content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.product__container .product__content .product__description { margin-bottom: 20px; font-weight: 300; line-height: 1.4; }
+
+.product__container .product__content .product__price { margin-bottom: 10px; font-size: 30px; }
+
+.product__container .product__content .product__price .smaller { font-size: 16px; }
+
+.product__container .product__content .product__buttons { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.product__container .product__content .product__buttons > *:not(:last-child) { margin-right: 16px; }
+
+.product__container .product__content .btn { padding: 10px 15px; border-radius: 4px; }
+
+.product__container .product__content .btn.to-cart { border: 2px solid #0d87c8; background-color: #0d87c8; color: #fff; }
+
+.product__container .product__content .btn.to-wishlist { background-color: #fff; border: 2px solid #0d87c8; color: #0d87c8; }
+
+.product__container .product__content .btn i { margin-right: 5px; }
+
+.product__container .product__content span.product__article { color: #4b5563; font-weight: 300; }
+
+.product__container .product__content .product__terms { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.product__container .product__content .product__terms > *:not(:last-child) { margin-bottom: 5px; }
+
+.product__container .product__content .product__terms b, .product__container .product__content .product__terms p { font-size: 12px; line-height: 1.5; }
+
+.product__container .product__content .product__terms p { color: #4b5563; }
+
+.reviews__container { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.reviews__container .reviews__list { width: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 32px 1fr; grid-template-columns: repeat(2, 1fr); grid-gap: 32px; }
+
+.reviews__container .reviews__list .review__single { padding: 30px; border: 1px solid #d1d5dc; border-radius: 4px; }
+
+.reviews__container .reviews__list .review__single .review__row { width: 100%; margin-bottom: 15px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+.reviews__container .reviews__list .review__single .date { font-size: 12px; }
+
+.reviews__container .reviews__list .review__single .review__stars { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.reviews__container .reviews__list .review__single .review__stars > * { display: -webkit-box; display: -ms-flexbox; display: flex; color: #facc15; }
+
+.reviews__container .reviews__list .review__single .review__stars > *:not(:last-child) { margin-right: 5px; }
+
+.reviews__container .reviews__list .review__single .review__text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.reviews__container .reviews__list .review__single .review__text b, .reviews__container .reviews__list .review__single .review__text p { font-size: 14px; }
+
+.reviews__container .reviews__list .review__single .review__text b:not(:last-child), .reviews__container .reviews__list .review__single .review__text p:not(:last-child) { margin-bottom: 10px; }
