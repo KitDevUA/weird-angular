@@ -1,0 +1,84 @@
+@import "_vars"
+
+.checkout-steps__container
+	padding-top: 32px
+	padding-bottom: 32px
+	display: flex
+	justify-content: center
+	align-items: center
+	border-bottom: 1px solid $gray
+
+.checkout-steps
+	display: flex
+	align-items: center
+	.divider
+		margin: 0 16px
+		color: $gray
+	.checkout-step
+		&.active
+			color: #0d87c8
+
+.checkout-grid
+	padding: 32px 0
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-gap: 50px
+.checkout-cart
+	width: 100%
+	.cart-flow
+		display: flex
+		flex-direction: column
+		.cart-item
+			width: 100%
+			padding-top: 24px
+			padding-bottom: 24px
+			display: flex
+			align-items: flex-start
+			&:not(:last-child)
+				border-bottom: 1px solid $gray
+			.cart-item-image
+				width: 100px
+				height: 100px
+				margin-right: 16px
+				border-radius: 4px
+				overflow: hidden
+			.cart-item-content
+				display: flex
+				flex-direction: column
+				flex-grow: 1
+				.cart-content-row
+					display: flex
+					align-items: center
+					justify-content: space-between
+					&:not(:last-child)
+						margin-bottom: 24px
+					&.second
+						color: $dark-gray
+						font-size: 14px
+					a
+						color: inherit
+						text-decoration: none
+	.total-price
+		width: 100%
+		display: flex
+		flex-direction: column
+		.pre-total,
+		.total-total
+			width: 100%
+			padding-top: 16px
+			padding-bottom: 16px
+			display: flex
+			flex-direction: column
+		.pre-total
+			margin-top: 20px
+			border-top: 1px solid $gray
+			border-bottom: 1px solid $gray
+			font-size: 14px
+		.total-row
+			display: flex
+			align-items: center
+			justify-content: space-between
+			&:not(:last-child)
+				margin-bottom: 16px
+		.gray
+			color: $dark-gray
