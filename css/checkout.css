@@ -8,11 +8,15 @@
 
 .checkout-grid { padding: 32px 0; display: -ms-grid; display: grid; -ms-grid-columns: 1fr 50px 1fr; grid-template-columns: repeat(2, 1fr); grid-gap: 50px; }
 
-.checkout-cart { width: 100%; }
+.checkout-cart { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
-.checkout-cart .cart-flow { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.checkout-cart .checkout__quantity { margin-left: auto; display: inline-block; }
 
-.checkout-cart .cart-flow .cart-item { width: 100%; padding-top: 24px; padding-bottom: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.checkout-cart .checkout__quantity .quantity__text { font-size: 14px; color: #4b5563; }
+
+.checkout-cart .cart-flow { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.checkout-cart .cart-flow .cart-item { width: 100%; padding-top: 24px; padding-bottom: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .checkout-cart .cart-flow .cart-item:not(:last-child) { border-bottom: 1px solid #d1d5dc; }
 
@@ -22,7 +26,7 @@
 
 .checkout-cart .cart-flow .cart-item .cart-item-content .cart-content-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.checkout-cart .cart-flow .cart-item .cart-item-content .cart-content-row:not(:last-child) { margin-bottom: 24px; }
+.checkout-cart .cart-flow .cart-item .cart-item-content .cart-content-row:not(:last-child) { margin-bottom: 5px; }
 
 .checkout-cart .cart-flow .cart-item .cart-item-content .cart-content-row.second { color: #4b5563; font-size: 14px; }
 
