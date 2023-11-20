@@ -16,7 +16,9 @@
 
 .product__container .product__content .product__buttons > *:not(:last-child) { margin-right: 16px; }
 
-.product__container .product__content .btn { padding: 10px 15px; border-radius: 4px; }
+.product__container .product__content .btn { padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+
+.product__container .product__content .btn:hover { opacity: .7; }
 
 .product__container .product__content .btn.to-cart { border: 2px solid #0d87c8; background-color: #0d87c8; color: #fff; }
 
